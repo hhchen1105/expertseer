@@ -19,13 +19,19 @@ Hung-Hsuan Chen (hhchen@psu.edu)
 
 Required software/packages
 ==========================
-1 Python 2.6+<br>
-2 MySQL Server 5.1+<br>
-3 Django 1.4+<br>
-4 Python libraries:<br>
-  a. python-gflags http://code.google.com/p/python-gflags/<br>
-  b. python-wikitools http://code.google.com/p/python-wikitools/<br>
-  c. solrpy http://code.google.com/p/solrpy/<br>
-  d. lxml http://lxml.de/<br>
-5 Apache Solr 3.6.2 (a tgz file of Apache Solr 3.6.2 is included in the project
-root)
+<ol type="1">
+  <li>Python 2.6+<br>
+  <li>MySQL Server 5.1+</li>
+  <li>Django 1.4+</li>
+  <li>Python libraries:</li>
+  <ol type="a">
+    <li>Python-gflags http://code.google.com/p/python-gflags/</li>
+    <li>python-wikitools http://code.google.com/p/python-wikitools/</li>
+    <li>solrpy http://code.google.com/p/solrpy/</li>
+    <li>lxml http://lxml.de/</li>
+  </ol>
+  <li>Apache Solr 3.6.2 (a tgz file of Apache Solr 3.6.2 is included in the
+  project root)</li>
+</ol>
+
+
