@@ -7,8 +7,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'chemseers.views.home', name='home'),
-    # url(r'^chemseers/', include('chemseers.foo.urls')),
+    # url(r'^$', 'expertseers.views.home', name='home'),
+    # url(r'^expertseers/', include('expertseers.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     # for all media
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
-    # for chemseers
+    # for expertseers
     url(r'^$', 'rel_keyphrases.views.index'),
     url(r'^experts/$', 'rel_keyphrases.views.index'),
     url(r'^experts/show', 'rel_keyphrases.views.show'),
