@@ -9,7 +9,7 @@ discipline.
 
 We apply the framework to build CSSeers, an expert recommender systems based on
 the CiteSeerX digital library and recommends experts in computer science.  Visit
-http://csseers.ist.psul.edu/ to see the demonstration.
+http://csseers.ist.psu.edu/ to see the demonstration.
 
 
 Authors
