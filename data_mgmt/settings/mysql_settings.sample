@@ -1,0 +1,8 @@
+# you'll need to fill-in the following fields and
+# rename this file to mysql_settings
+
+host: ""
+user: ""
+passwd: ""
+socket: ""
+db: ""

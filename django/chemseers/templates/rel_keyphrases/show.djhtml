@@ -1,0 +1,22 @@
+{% extends "index.djhtml" %}
+
+{% block page_title %}Relevant keyphrase query{% endblock %}
+
+{% block rel_keyword_query_box %} {% include "rel_keyphrases/_rel_keyphrase_query_box.djhtml" %} {% endblock %}
+
+{% block rel_keyphrases %}
+  <div id="related_query">
+    {% include "rel_keyphrases/_expansion_cloud.djhtml" %}
+  </div>
+{% endblock %}
+
+
+{% block item_list %}
+  <div id="experts">
+    {% include "experts/_list_experts.djhtml" %}
+  </div>
+{% endblock %}
+
+
+
+

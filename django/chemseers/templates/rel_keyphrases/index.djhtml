@@ -1,0 +1,6 @@
+{% extends "index.djhtml" %}
+
+{% block page_title %}Relevant keyphrase query{% endblock %}
+
+{% block rel_keyword_query_box %} {% include "rel_keyphrases/_rel_keyphrase_query_box.djhtml" %} {% endblock %}
+

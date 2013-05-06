@@ -1,0 +1,17 @@
+<div class="sec">
+  <div class="secheader"> <strong>>></strong> Publications
+    <font style="font-style:italic;">({{ papers|length }} documents) </font>
+  </div>
+  <div id="pubs" style='display:block;'>
+    <ol>
+      {% for paper in papers %}
+        <!--<td valign="top" align="right">{{ paper.2 }}</td>-->
+        <li><span class="paper"><a href="/media/pdfs/{{ paper.4 }}">{{ paper.0|striptags }}</a></span>
+        {% if paper.1 > 0%}
+          - {{ paper.1 }}
+        {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>

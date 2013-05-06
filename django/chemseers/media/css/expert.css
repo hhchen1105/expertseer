@@ -1,0 +1,56 @@
+html,body{margin:10px;padding:0}
+body {font: 80% arial,sans-serif; text-align:center; }
+a {padding:5px; text-decoration:none; color:#000000; }
+
+p {margin:0 10px 10px}
+
+div#search  {background:#062170; height:50px; padding-top:10px; padding-bottom:4px; }
+
+div#header	{background-color:#4575D4;}
+div#header	  h1{ height:70px; line-height:100px; margin:0; padding-left:20px; 
+									font-family: verdana, geneva, sans-serif; }
+
+div#container	{ float:left; text-align:left; height:100%; border:solid; width:750px; margin:0 auto;}
+
+div#wrapper1  { float:left; position:relative; }
+div#wrapper2  { float:left; right:0px; background: #4575D4; }
+div#content		{ float:left; background: white; width:700px; padding:0px; min-height: 350px; }
+div#sidebar   { float:right; width:0px; }
+
+div#footer	  { background:#FFA240; height:50px; clear:both; width:100%; padding-top: 10px;
+								border-top-width: 1px; border-top-style: solid; }
+
+#pubs     { padding-left: 10px; }
+#taxonomy { padding: 10px; display: block; }
+.box      { padding: 10px; }
+
+/* .sec       { background: #FFDE73; margin: 25px; padding-bottom: 10px; } 
+   .secheader { background: #A67F00; padding: 6px; margin-bottom: 5px; color: white; }
+	 .seclink   { color: #FFDE73; font-weight: bold; }
+*/
+.sec       { margin: 25px; padding-bottom: 10px; }
+.secheader { background: #A67F00; padding: 6px; margin-bottom: 5px; color: white; }
+.seclink   { color: #FFDE33; font-weight: bold; }
+
+.item   { padding-left:0px; padding-top:4px; padding-bottom:4px; }
+.detail { padding-left:5px; }
+
+.info  { padding-left:10px; }
+.paper { font-style: italic; font-size: 11px; }
+.col   { padding-right:0px; }
+.keyword { padding-left:2px; }
+
+div.info_box     { font: 12px; height: 100px; }
+div.profile_name { position: absolute; top: 20px; left: 40px; width: 400px; }
+div.profile_aff  { position: relative; top: 60px; left: 40px; width: 400px; height: 8px; }
+
+div.stat_box   { font: 12px; position: absolute; top: 30px; left: 490px; width: 200px; }
+span.stat_line { width: 200px; border-bottom:1px solid #000; }
+span.stat_desc { display:-moz-inline-block; display:inline-block; width: 120px; }
+span.stat_cell { display:-moz-inline-block; display:inline-block; width: 80px; text-align: right; }
+
+/* user login */
+#user_nav {
+	float: right;
+	font-size: 12px;
+}

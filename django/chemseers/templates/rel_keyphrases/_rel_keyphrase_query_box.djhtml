@@ -1,0 +1,17 @@
+<form action="/experts/show" method="get">
+  <p>
+  <font color="#FFFFFF">Search for experts in: </font>
+  {{ form.q_term }}
+<!--  
+  <font color="#FFFFFF"> by </font>
+  <select id="id_ranking_method" name="ranking_method">
+    {% for method in ranking_method %}
+      <option value="{{ method }}">{{ method }}</option>
+    {% endfor %}
+  </select>
+--> 
+  <input type="submit" value="Submit" />
+  <br><font color="#FFFFFF">Examples: <a href="../experts/show?&q_term=nuclear+magnetic+resonance&ranking_method={{rank_method}}"><font color="#FFFFFF"><i>nuclear magnetic resonance</i></font></a>, <a href="../experts/show?&q_term=enzyme&ranking_method={{rank_method}}"><font color="#FFFFFF"><i>enzyme</i></font></a>, <a href="../experts/show?&q_term=steel&ranking_method={{rank_method}}"><font color="#FFFFFF"><i>steel</i></font></a></font>
+  </p>
+</form>
+

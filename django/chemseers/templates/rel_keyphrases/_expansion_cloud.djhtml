@@ -1,0 +1,27 @@
+<div id='tagcloud' style="padding: 8px 20px 8px 30px;">
+<script type="text/javascript">
+  google.load("visualization", "1");
+  google.setOnLoadCallback(drawChart);
+
+  var num_rel_keyphrases = {{ rel_keyphrases|length }};
+
+  function drawChart() {
+    data = new google.visualization.DataTable();
+    data.addColumn('string', 'Label');
+    data.addColumn('number', 'Value');
+    data.addColumn('string', 'Link');
+    data.addRows(num_rel_keyphrases);
+    {% for rel_keyphrase in rel_keyphrases %}
+      data.setValue({{ forloop.counter0 }}, 0, "{{ rel_keyphrase.0|safe }}" );
+      data.setValue({{ forloop.counter0 }}, 1, {{ rel_keyphrase.1 }}*5 );
+      data.setValue({{ forloop.counter0 }}, 2, "show?&q_term={{ rel_keyphrase.0|safe }}&ranking_method={{ rank_method }}" );
+    {% endfor %}
+
+    var outputDiv = document.getElementById('chart_div');
+    var tc = new TermCloud(outputDiv);
+    tc.draw(data, null);
+  }
+</script>
+  <div id="chart_div"></div>
+</div>
+
